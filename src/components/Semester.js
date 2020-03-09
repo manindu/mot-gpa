@@ -10,11 +10,11 @@ const Semester = ({ title, subjects, onGradeSelect }) => {
         <Flex key={subject.label} width="100%" direction="row" alignItems="center" justifyContent="space-between" marginBottom="1">
         <Flex direction="row" alignItems="center">
           <Text>{`${subject.code} - ${subject.label}`}</Text>
-          <Tag marginLeft="1" size="sm" variantColor="purple" rounded="full">
+          <Tag marginLeft="1" marginRight="2" size="sm" variantColor="purple" rounded="full">
             <TagLabel>{subject.credits}</TagLabel>
           </Tag>
         </Flex>
-        <Select defaultValue="None" width="20%" id="center" onChange={e => onGradeSelect(subject, e.target.value)}>
+        <Select defaultValue="None" minWidth="20%" maxWidth="25%" id="center" onChange={e => onGradeSelect(subject, e.target.value)}>
           <option value="None">None</option>
           <option value="A+">A+</option>
           <option value="A">A</option>

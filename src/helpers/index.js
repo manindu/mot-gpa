@@ -123,7 +123,7 @@ export const subjectData = [
     semester: "Semester 5",
     subjects: [
       {
-        label: "Research Project - Phase I",
+        label: "Research Project Phase I",
         code: 'MN6102',
         credits: 10
       }
@@ -133,7 +133,7 @@ export const subjectData = [
     semester: "Semester 6",
     subjects: [
       {
-        label: "MN 6202 - Research Project - Phase II",
+        label: "Research Project Phase II",
         code: 'MN6202',
         credits: 10
       }
